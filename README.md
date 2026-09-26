@@ -76,6 +76,8 @@ Deviation Copilot Review & Editing
         ↓
 PostgreSQL
 
+```
+
 ###Project Structure
 
 DeviationIQ/

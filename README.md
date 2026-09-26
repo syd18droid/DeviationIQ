@@ -76,7 +76,8 @@ Deviation Copilot Review & Editing
         ↓
 PostgreSQL
 
-Project Structure
+###Project Structure
+
 DeviationIQ/
 ├── backend/
 │   ├── ai/
@@ -110,7 +111,9 @@ DeviationIQ/
 │
 ├── .gitignore
 └── README.md
-AI Workflow
+
+###AI Workflow
+
 User provides a deviation PDF or text.
 PDF text is extracted when required.
 The deviation information is passed to the LangGraph workflow.
@@ -120,13 +123,16 @@ The extracted information is displayed in the Log Deviation form.
 The user can review the information through the Deviation Copilot.
 The Copilot can update requested fields while preserving the remaining information.
 The reviewed deviation is saved to PostgreSQL.
-API Endpoints
+
+###API Endpoints
+
 Method	Endpoint	Purpose
 POST	/api/deviations/analyze	Analyze deviation text
 POST	/api/deviations/extract-pdf	Extract and analyze PDF deviation
 POST	/api/deviations/chat	Process Copilot editing requests
 POST	/api/deviations	Save reviewed deviation
-Security
+
+###Security
 
 API keys and environment variables are kept outside the repository.
 
@@ -136,7 +142,7 @@ backend/.env
 
 The .env file is excluded from Git and is not committed to the repository.
 
-Application Flow
+###Application Flow
 
 The application follows an AI-assisted review workflow:
 
@@ -154,6 +160,6 @@ Final Save
     ↓
 PostgreSQL
 
-Disclaimer
+###Disclaimer
 
 AI-generated information is provided as an initial recommendation and should be reviewed by the user before saving.

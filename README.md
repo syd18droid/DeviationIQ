@@ -78,7 +78,7 @@ PostgreSQL
 
 ```
 
-###Project Structure
+### Project Structure
 
 ```text
 DeviationIQ/
@@ -117,7 +117,7 @@ DeviationIQ/
 
 ```
 
-###AI Workflow
+### AI Workflow
 
 ```text
 
@@ -132,7 +132,7 @@ The Copilot can update requested fields while preserving the remaining informati
 The reviewed deviation is saved to PostgreSQL.
 ```
 
-###API Endpoints
+### API Endpoints
 
 ```text
 
@@ -154,7 +154,7 @@ The .env file is excluded from Git and is not committed to the repository.
 
 ```
 
-###Application Flow
+### Application Flow
 
 ```text
 
@@ -176,7 +176,7 @@ PostgreSQL
 
 ```
 
-###Disclaimer
+### Disclaimer
 
 ```text
 

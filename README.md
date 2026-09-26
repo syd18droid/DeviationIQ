@@ -80,6 +80,7 @@ PostgreSQL
 
 ###Project Structure
 
+```text
 DeviationIQ/
 ├── backend/
 │   ├── ai/
@@ -114,7 +115,11 @@ DeviationIQ/
 ├── .gitignore
 └── README.md
 
+```
+
 ###AI Workflow
+
+```text
 
 User provides a deviation PDF or text.
 PDF text is extracted when required.
@@ -125,8 +130,11 @@ The extracted information is displayed in the Log Deviation form.
 The user can review the information through the Deviation Copilot.
 The Copilot can update requested fields while preserving the remaining information.
 The reviewed deviation is saved to PostgreSQL.
+```
 
 ###API Endpoints
+
+```text
 
 Method	Endpoint	Purpose
 POST	/api/deviations/analyze	Analyze deviation text
@@ -144,7 +152,11 @@ backend/.env
 
 The .env file is excluded from Git and is not committed to the repository.
 
+```
+
 ###Application Flow
+
+```text
 
 The application follows an AI-assisted review workflow:
 
@@ -162,6 +174,10 @@ Final Save
     ↓
 PostgreSQL
 
+```
+
 ###Disclaimer
+
+```text
 
 AI-generated information is provided as an initial recommendation and should be reviewed by the user before saving.
